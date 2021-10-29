@@ -7,15 +7,15 @@
 
 for ((num=1; num <= 100; num++))
 do
-    if ((num%3 == 0)) && ((num%5 == 0))
+    if ((num % 3 == 0)) && ((num % 5 == 0))
     then
-        echo 'FizzBuzz'
-    elif ((num%3 == 0))
+        echo "FizzBuzz"
+    elif ((num % 3 == 0))
     then
-        echo 'Fizz'
-    elif ((num%5 == 0))
+        echo "Fizz"
+    elif ((num % 5 == 0))
     then
-        echo 'Buzz'
+        echo "Buzz"
     else
         echo "$num"
     fi
