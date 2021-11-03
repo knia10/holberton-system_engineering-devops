@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-# Exactly matching a string that starts with h ends with n and can have any single character
+# Your script should output: [SENDER],[RECEIVER],[FLAGS]
 
 puts ARGV[0].scan(/(?<=from:)[+?\d\w]+|(?<=to:)[+?\d]+|(?<=flags:)[-?[0-1]:]+/).join","
