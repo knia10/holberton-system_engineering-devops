@@ -1,5 +1,5 @@
 # 0x0D. Web stack debugging #0
-  <img src = "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/265/uWLzjc8.jpg" width = 80px>
+  <img src = "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/265/uWLzjc8.jpg" width = 100px>
 
 ## Background Context
 The Webstack debugging series will train you in the art of debugging. Computers and software rarely work the way we want (that’s the “fun” part of the job!).
