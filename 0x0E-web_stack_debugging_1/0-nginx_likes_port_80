@@ -3,6 +3,5 @@
 apt-get -y update
 apt-get -y install nginx
 service nginx start 
-sudo sed -i '22s/.*/\t\tlisten 80 default_server/g' /etc/nginx/sites-enabled/default
-sudo sed -i '23s/.*/\t\tlisten [::]:80 default_serverr/g' /etc/nginx/sites-enabled/default
+sudo sed -i '/etc/nginx/sites-enabled/default/etc/nginx/sites-availabe/default' /etc/nginx/nginx.conf
 sudo service nginx restart
