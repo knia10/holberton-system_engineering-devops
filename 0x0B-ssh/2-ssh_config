@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-# configuration of the SSH configuration file for the local SSH client, 
+# configuration of the SSH configuration file for the local SSH client,
 # according to our needs so that it can connect to a server without entering a password.
 # SSH client configuration must be configured to use the private key ~/.ssh/school
 # SSH client configuration must be configured to refuse to authenticate using a password
@@ -27,7 +26,7 @@ Host *
 #   ForwardAgent no
 #   ForwardX11 no
 #   ForwardX11Trusted yes
-#   PasswordAuthentication yes
+    PasswordAuthentication yes
 #   HostbasedAuthentication no
 #   GSSAPIAuthentication no
 #   GSSAPIDelegateCredentials no
@@ -38,7 +37,7 @@ Host *
 #   AddressFamily any
 #   ConnectTimeout 0
 #   StrictHostKeyChecking ask
-#   IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/school
 #   IdentityFile ~/.ssh/id_dsa
 #   IdentityFile ~/.ssh/id_ecdsa
 #   IdentityFile ~/.ssh/id_ed25519
@@ -55,5 +54,5 @@ Tunnel no
     SendEnv LANG LC_*
     HashKnownHosts yes
     GSSAPIAuthentication yes
-    IdentityFile ~/.ssh/school
-    PasswordAuthentication no
+#   IdentityFile ~/.ssh/school
+#    PasswordAuthentication no
