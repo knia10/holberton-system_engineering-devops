@@ -1,5 +1,5 @@
 # 0x13. Firewall
-<img src = "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/284/V1HjQ1Y.png" width = 400px>
+<img src = "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/284/V1HjQ1Y.png" width = 800px length = 400px>
 
 ## Background Context
 ### Your servers without a firewall…
