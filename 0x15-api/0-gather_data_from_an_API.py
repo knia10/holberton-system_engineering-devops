@@ -26,7 +26,7 @@ if __name__ == "__main__":
             if i.get('completed'):
                 NUMBER_OF_DONE_TASKS += 1
                 TASK_TITLE.append(i.get('title'))
-    print("Employee {} is done with({}/{})".format(EMPLOYEE_NAME,
+    print("Employee {} is done with({}/{}):".format(EMPLOYEE_NAME,
                                                    NUMBER_OF_DONE_TASKS,
                                                    TOTAL_NUMBER_OF_TASKS))
 
