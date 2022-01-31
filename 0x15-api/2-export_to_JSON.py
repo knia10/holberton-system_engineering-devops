@@ -15,14 +15,13 @@ if __name__ == "__main__":
 
     EMPLOYEE_NAME = employee.get('username')
 
-    url_all = 'https://jsonplaceholder.typicode.com/todos/'
-    all_employees = requests.get(url_all).json()
+    all_employees = requests.get('https://jsonplaceholder.typicode.com/todos/')
 
     owner_task = []
     dict_employ = {}
 
-    for i in all_employees:
-        if i.get('userId') == int(id_employ):
+    for i in all_employees.json():
+        # if i.get('userId') == int(id_employ):
             dict_task = {"task": i['title'],
                          "completed": i['completed'],
                          "username": EMPLOYEE_NAME}
