@@ -6,7 +6,7 @@ returns information about his/her TODo list progress.
 import requests
 from sys import argv
 
-'''returns information about his/her TODo list progress.'''
+
 if __name__ == "__main__":
     ''' Module get employee and task of employee'''
 
