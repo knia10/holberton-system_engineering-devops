@@ -25,7 +25,8 @@ if __name__ == "__main__":
     for i in all_employees:
         if i.get('userId') == int(id_employ):
             dict_task = {"task": i.get('title'),
-                         "completed": i.get('completed'), "username": EMPLOYEE_NAME}
+                         "completed": i.get('completed'),
+                         "username": EMPLOYEE_NAME}
             owner_task.append(dict_task)
     dict_employ[id_employ] = owner_task
 
