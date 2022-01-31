@@ -6,8 +6,9 @@ returns information about his/her TODo list progress.
 import requests
 from sys import argv
 
+'''returns information about his/her TODo list progress.'''
 if __name__ == "__main__":
-    ''' returns information about his/her TODo list progress.'''
+    ''' Module get employee and task of employee'''
 
     id_employ = argv[1]
     employee = requests.get(f"https://jsonplaceholder.typicode.com/users\
