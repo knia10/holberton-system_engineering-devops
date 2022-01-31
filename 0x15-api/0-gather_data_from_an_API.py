@@ -10,10 +10,10 @@ from sys import argv
 if __name__ == "__main__":
 
     id_employ = argv[1]
-    employee = requests.get('https://jsonplaceholder.typicode.com/users {}'.
-                            format(id_employ))
+    employee = requests.get('https://jsonplaceholder.typicode.com/users/{}'.
+                            format(id_employ)).json()
 
-    EMPLOYEE_NAME = employee.json().get('name')
+    EMPLOYEE_NAME = employee.get('name')
 
     all_employees = requests.get('https://jsonplaceholder.typicode.com/todos/')
     NUMBER_OF_DONE_TASKS = 0
