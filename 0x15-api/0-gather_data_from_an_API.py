@@ -8,11 +8,9 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    ''' Module get employee and task of employee'''
 
     id_employ = argv[1]
-    employee = requests.get(f"https://jsonplaceholder.typicode.com/users\
-                {id_employ}")
+    employee = requests.get("https://jsonplaceholder.typicode.com/users {}".format(id_employ))
 
     EMPLOYEE_NAME = employee.json().get('name')
 
@@ -27,8 +25,8 @@ if __name__ == "__main__":
             if i.get('completed'):
                 NUMBER_OF_DONE_TASKS += 1
                 TASK_TITLE.append(i.get('title'))
-    print(f"Employee {EMPLOYEE_NAME} is done with\
-        ({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS})")
+    print("Employee {} is done with({}/{})"\
+        .format(EMPLOYEE_NAME, NUMBER_OF_DONE_TASKS, TOTAL_NUMBER_OF_TASKS))
 
     for j in TASK_TITLE:
-        print(f"\t {j}")
+        print("\t {}".format(j))
