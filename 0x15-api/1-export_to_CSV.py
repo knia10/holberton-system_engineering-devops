@@ -19,9 +19,9 @@ if __name__ == "__main__":
 
     filename = id_employ + '.csv'
     with open(filename, 'w') as f:
-        writer = csv.writer(f, delimiter=',')
+        writer = csv.writer(f, quotechar='"', quoting=csv.QUOTE_ALL)
 
-    for i in all_employees.json():
-        if i.get('userId') == int(id_employ):
-            writer.writerow([id_employ, EMPLOYEE_NAME,
-                            i.get('completed'), i.get('title')])
+        for i in all_employees.json():
+            if i.get('userId') == int(id_employ):
+                writer.writerow([id_employ, EMPLOYEE_NAME,
+                                i.get('completed'), i.get('title')])
