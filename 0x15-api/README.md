@@ -20,7 +20,7 @@ This is a perfect example of a task that is not suited for Bash scripting, so le
 - 📖 Pythonic Constant name style
 - 📖 Significance of CapWords or CamelCase in Python
 
-## Requirements 
+## Requirements
 ### General
 - 🚩 Allowed editors: `vi`, `vim`, `emacs`
 - 🚩 All your files will be interpreted/compiled on Ubuntu 14.04 LTS using `python3` (version 3.4.3)
