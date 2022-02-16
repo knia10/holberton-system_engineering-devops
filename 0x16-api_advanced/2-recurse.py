@@ -19,13 +19,13 @@ def recurse(subreddit, hot_list=[], after="None"):
            format(subreddit, after))
     user_agent = {'User-Agent': 'My User Agent Custom'}
     response = requests.get(url, headers=user_agent).json()
-    get_children = response.get('data').get('children')
-    get_after = response.get('data', {}).get('after')
+    get_children = response.get('data', {}).get('children')
+    get_after = response.get('data').get('after')
     if response.get('error') == 404:
         return None
     else:
         for post in get_children:
             hot_list.append(post.get('data').get('title'))
-        if not get_after:
-            return hot_list
-        return recurse(subreddit, hot_list, after)
+    if not get_after:
+        return hot_list
+    return recurse(subreddit, hot_list, after)
