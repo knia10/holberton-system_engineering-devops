@@ -4,6 +4,7 @@ function that queries the Reddit API and prints the titles of the first
 10 hot posts listed for a given subreddit.
 '''
 import requests
+import json
 
 
 def top_ten(subreddit):
@@ -15,8 +16,8 @@ def top_ten(subreddit):
     user_agent = {'User-Agent': 'My User Agent Custom'}
     response = requests.get(url, headers=user_agent).json()
     get_children = response.get('data').get('children')
-    if get_children:
+    if response.get('error') == 404:
+        print ("None")
+    else:
         for post in get_children:
             print(post.get('data').get('title'))
-    else:
-        print ('None')
