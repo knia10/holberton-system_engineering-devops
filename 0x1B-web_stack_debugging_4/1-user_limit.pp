@@ -1,5 +1,5 @@
 exec { 'configuration_hard_nofile':
-  command => "sed -i '/holberton hard nofile/s/5/65535/' /etc/security/limits.conf",
+  command => "sed -i '/holberton hard nofile/s/5/65535/g' /etc/security/limits.conf",
   path    => ['/bin', '/usr/bin', '/usr/sbin']
 }
 
